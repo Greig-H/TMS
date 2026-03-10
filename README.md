@@ -32,6 +32,34 @@ A Node.js web application for managing team players, sessions, and attendance us
 
 ⚠️ **Never commit your `.env` file to version control!** It contains sensitive API keys. The `.gitignore` file is configured to automatically exclude it.
 
+## Deployment to Vercel
+
+1. Install Vercel CLI:
+   ```bash
+   npm install -g vercel
+   ```
+
+2. Login to Vercel:
+   ```bash
+   vercel login
+   ```
+
+3. Deploy to Vercel:
+   ```bash
+   vercel
+   ```
+   Follow the prompts to set up your project.
+
+4. Set environment variables in Vercel dashboard:
+   - Go to your project dashboard
+   - Navigate to Settings > Environment Variables
+   - Add your Supabase credentials:
+     - `SUPABASE_URL`
+     - `SUPABASE_ANON_KEY`
+     - `PORT` (optional, defaults to 3000)
+
+5. Your app will be live at the URL provided by Vercel!
+
 ## Features
 
 - Player management (CRUD operations)
